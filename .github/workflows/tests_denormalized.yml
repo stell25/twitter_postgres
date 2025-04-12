@@ -20,4 +20,4 @@ jobs:
         docker ps -a
         sleep 20
         sh load_tweets.sh
-        docker-compose exec -T pg_denormalized ./run_tests.sh
+        docker compose exec -T pg_denormalized ./run_tests.sh
